@@ -2,7 +2,6 @@
 <html>
 <head>
 <script>
-window.onload = function() {
 
 var appId = localStorage.getItem('appId');
 
@@ -10,12 +9,21 @@ var meta = document.createElement("meta");
 meta.name = "apple-itunes-app";
 meta.content = "app-id=${appId}";
 document.head.appendChild(meta);
+
+</script>
+<script>
+window.onload = function() {
+
+var debug = document.getElementById('debugAppId');
+debug.innerText = appId;
+
 }
 </script>
 </head>
 
 <body>
 <h2>Welcome to the Cheese Realm</h2>
+<p id="debugAppId"></p>
 </body>
 
 </html>
