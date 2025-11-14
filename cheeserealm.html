@@ -7,7 +7,7 @@ var appId = localStorage.getItem('appId');
 
 var meta = document.createElement("meta");
 meta.name = "apple-itunes-app";
-meta.content = "app-id=${appId}";
+meta.content = "app-id=" + appId;
 document.head.appendChild(meta);
 
 </script>
